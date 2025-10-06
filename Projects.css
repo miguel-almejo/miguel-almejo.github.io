@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/bg_img.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+}
+/* Formats the dropdown menu*/
+.dropdown{
+    color: azure;
+    border: none;
+    cursor: pointer;
+}
+.dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropdown .options{
+    display: none;
+    position: absolute;
+    background-color: hsl(216, 100%, 10%);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsl(0, 0%, 0%, 0.8);
+}
+.dropdown:hover .options{
+    display: block;
+}
+/* sets up and styles the vavigatioin bar*/
+.navbar ul{
+    font-family: Verdana;
+    list-style-type: none;
+    background-color: hsl(216, 100%, 10%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    color:lightgray;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: hsla(216, 100%, 50%);
+}
+.navbar li{
+    float: right;
+}
+/* styles the main portion of the page*/
+main{
+    color:lightgrey;
+    padding: 10px;
+    font-family: Verdana;
+    font-size: large;
+}
+main h2{
+    font-size: xxx-large;
+}
+main img{
+    width: 300px;
+}
+#MCU_8051 img{
+    height: 240px;
+}
+#MSP430 img{
+    height: 200px;
+}
+/* formats and stules the structure of the footer*/
+footer{
+    background-color: hsla(216, 100%, 10%);
+    color: lightgray;
+    padding: 10px;
+    font-family: Verdana;
+}
+footer a{
+    color: hsla(216, 100%, 70%);
+    float: right;
+    width: 50px;
+}
+/* alter the format of the page whenever a screen with
+less than 600 pixels is used such as a phone screen*/
+@media screen and (max-width:600px){
+    main, img{
+        width:100%;
+    }
+}
