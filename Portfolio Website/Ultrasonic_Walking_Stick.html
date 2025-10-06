@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ultrasonic Walking Cane</title>
+    <script src="https://kit.fontawesome.com/5789e3a264.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Ultrasonic_Walking_Stick.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="About.html">About</a></li>
+            <li>
+            <div class="dropdown">
+                <a href="Projects.html">Projects</a>
+                <div class="options">
+                    <a href="TM4C.html">TM4C Projects</a>
+                    <a href="Rasp_Pi.html">Raspberry Pi Projects</a>
+                    <a href="MCU_8051.html">8051 Microcontroller Projects</a>
+                    <a href="MSP430.html"> MSP430 Projects</a>
+                </div>
+            </div>
+            </li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <main> 
+        <div class="center">
+        <h1>Ultrasonic Walking Cane</h1>
+       <br> <img src="images/US_Cane.JPG">
+       <br> <h3>By: Nolan Santellanes, Mykael Chavez & Miguel Almejo</h3>  <br>
+        <p> <b>Overview: </b>This project was the capstone project for our major. Its function was to help people that are visually impared know when there's an 
+            object or wall either on the left, right, or in front of them and warn them through the use of a braille system. <br>
+        The components used where:
+        <ul>
+            <li>TM4C123 Microcontroller</li>
+            <li>XL6009E1 power booster</li>
+            <li>3 x L298N H-Bridge motor driver</li>
+            <li>6 x Mini push-pull solenoid actuators</li>
+            <li>3 x SRF05 Ultrasonic Sensors</li>
+            <li>6 x AA batteries</li>
+            <li>Standard folding walking cane  for the visually impared</li>
+        </ul>
+        <b>Description: </b>The Ultrasonic sensors where used to detect where there was an object and in which direction, meaning there was a sensor on 
+        each side of the cane(left, right, front). The distances were always being tracked and compared to see which one was reading the 
+        closest object. This raised a flag and sent this to the motor drivers to activate certain actuators to form a letter in braille(L, R, F).
+    </p>
+    </div>
+    Complete Report Here:
+    <a href="https://docs.google.com/document/d/1L2nEhKPuZMVa3-_TGOOOSUyx4A0wOZMFhHaWb1kY9qA/edit?usp=sharing">Ultrasonic Walking Stick By: EchoNav</a> 
+    <br>Presentation Here:
+    <a href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:3d987051-880e-45f5-8e1d-f31a9ea0fcd0">Ultrasonic Walking Stick By: EchoNav</a>  
+     
+</main>
+
+    <footer>
+            Author: Miguel Almejo
+            &copyCopyright Reserved
+            <a href="https://www.linkedin.com/in/miguel-almejo-275399330/">
+                <i class="fa-brands fa-linkedin fa-2xl"></i>
+            </a>
+            <a href="mailto:almejo.miguel56@gmail.com">
+                <i class="fa-solid fa-envelope fa-2xl"></i>
+            </a>
+            <a href="https://github.com/miguel-almejo/Personal-Projects">
+                <i class="fa-brands fa-square-github fa-2xl"></i>
+            </a>
+    </footer>
+
+</body>
+</html>
+
